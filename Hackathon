@@ -1,0 +1,249 @@
+ boolean  two(boolean a, boolean b, boolean c){
+ if((a&&b) || (b&&c) || (a&&c))
+Return true;
+}
+Else 
+False;
+
+}
+     
+Scanner s = new Scanner(System.in);
+System.out.println(“Enter a number”);
+int number = s.nextInt();
+Int fact =1;
+(for int i = number; i>0; i--){
+ fact = fact*1;
+}
+System.out.println(“the factorial of “ + number  + “ is “ + fact);
+
+ int temp = 0;
+public static void main(String[] args) {
+int arr[] = { 5, 3, 2, 1, 4 };
+	for (int i = 0; i < arr.length; i++) {
+	for (int j = i + 1; j < arr.length; j++) {
+		if (arr[i] > arr[j]) {
+			temp = arr[i];
+			arr[i] = arr[j];				
+                                     arr[j] = temp;
+	}
+		System.out.println(arr[i]);
+
+ public static void main(String[] args) {
+                 int arr[] = { 1, 2, 1, 2,1 };
+                 for(int i = 0; i<arr.lenght, i++){
+                   if(arr[i]!=arr[arr.length-1-i]){
+                   System.out.println(“Not a palindrome”);
+              }
+                    else
+                 System.out.println(“It is a palindrome”);
+        }
+	public static void charCount(String str) {
+Map<Character, Integer> count = new HashMap<Character, Integer>();
+
+ char[] charArray = str.toLowerCase().toCharArray();
+ 
+ for(char ch: charArray) {
+	if (count.containsKey(" ")) {
+		count.put(ch, 0);
+	}
+	 
+ else if(count.containsKey(ch)) {
+		 count.put(ch, count.get(ch)+1);
+	 }
+	 else 
+       count.put(ch, 1);
+ }
+ for (Map.Entry entry : count.entrySet()) { 
+         System.out.println(entry.getKey() + " " + entry.getValue()); 
+     } 
+ 
+}
+	public static void main(String[] args) {
+
+	charCount("1,2,3,4,5,1");
+
+}
+
+No idea.
+Two ways to create string object
+String s = “Ramya”
+String s = new String(“Ramya”);
+
+
+ String s = “welcome”
+     String s1 = s.toUpperCase();
+
+ String s = “WELCOME”;
+String s1 = s.toLowerCase();
+
+Subsequence method provides next character in sequence
+Str.split(“ “) is used to split the string
+Scanner s = new Scanner(System.in);    
+	   System.out.println("Enter a word ot check if the word  is a palindrome or not");	
+	                 String word = s.next().toLowerCase();
+		for(int i =0; i<word.length(); i++) {
+			if(word.charAt(i)!=word.charAt(word.length()-1-i)) {
+			System.out.println("The word you have entered is not a palindrome";
+		}
+			
+		else
+		System.out.println("The word you have entered is a palindrome");
+String word = "Java Code";
+String reverse ="";
+		
+	for(int i =word.length()-1; i>=0; i--) {
+		
+      reverse = reverse + word.charAt(i);
+               
+}
+         System.out.println(reverse);
+
+	String word = "Java Code";
+ String[] split = word.split(" ");
+String reverse ="";
+	for(int i =split.length-1; i>=0; i--) {
+      reverse = reverse + split[i] + " ";
+              System.out.println(reverse + " ");
+
+	public static void main(String[] args) {
+
+	String str = "Ramya rocks Ramya";
+	String[] unique = str.split(" ");
+	String word = "";
+	for (int i = 0; i < unique.length; i++) {
+
+		for (int j = 0; j < unique.length; j++) {
+
+		if (unique[i] != unique[j]) {
+
+				word = unique[j] + " ";
+				}
+}
+	}
+	System.out.println(word);
+
+public static void main(String[] args) {
+
+	String word = "Java Rocks";
+	char remove = 'a';
+	
+	String newWord="";
+	
+   char [] array = word.toLowerCase().toCharArray();
+   
+   for (int i=0; i<array.length; i++) {
+	   
+	   if(array[i]!=remove)
+		   
+		   newWord = newWord + array[i];
+	   }
+	
+   System.out.println(newWord);
+   }
+
+17.String str = "JAva123";
+        int upper = 0, lower = 0, number = 0, special = 0;
+  
+        for(int i = 0; i < str.length(); i++)
+        {
+            char ch = str.charAt(i);
+            if (ch >= 'A' && ch <= 'Z')
+                upper++;
+            else if (ch >= 'a' && ch <= 'z')
+                lower++;
+            else if (ch >= '0' && ch <= '9')
+                number++;
+            else
+                special++;
+        }
+  
+        System.out.println("Lower case letters : " + lower);
+        System.out.println("Upper case letters : " + upper);
+        System.out.println("Number : " + number);
+        System.out.println("Special characters : " + special);
+    }
+18.  public static void main(String[] args) {
+
+	String str = "Ramya rocks Ramya";
+	String[] duplicate = str.split(" ");
+	String word = "";
+	for (int i = 0; i < duplicate.length; i++) {
+
+		for (int j = 0; j < duplicate.length; j++) {
+
+		if (duplicate[i] ==duplicate[j]) {
+
+				word = unique[j] + " ";
+				}
+}
+	}
+	System.out.println(word);
+
+21. int a = 10;
+      String s = Integer.toString(i);
+
+28.  public static int factorial(int num) {
+		
+		if(num==1) {
+			return 1;
+		}
+		else
+			return(num * factorial(num-1));
+	}
+35.  Test cases for ATM
+Verify there is a card reader to insert
+Verify the card reader is right dimension to insert the card
+ Verify if the cash dispenser is working as expected.
+ Verify if the receipt printer is working correctly. Which means it can print the data on the paper and the paper comes out properly.
+ Verify if the Screen buttons are working correctly.
+Verify if the text on the screen button is visible clearly.
+ Verify the font of the text on the screen buttons.
+Verify each number button on the Keypad.
+ Verify the functionality of the Cancel button on the Keypad.
+36. Test cases for pencil
+	Verify the dimensions of the pencil are correct
+	Verify the brand and logo name are correct
+            Verify the the pencil contains right materials
+            Verify the pencil is working and writing
+          
+37. The JVM(Java Virtual Machine) is the specification for a software program that executes code and provides the runtime environment for that code.
+
+38.  Polymorphism means one method has different implementation based on the data types and Encapsulation means binding data together.
+
+39.Method Overloading is a feature that allows a class to have more than one method having the same name.  Method Overriding means a derived class is implementing a method of its super class. The call to overridden method.
+
+40. Strings are  immutable for caching, security, synchronization, and performance.
+
+41.  String Buffer is mutable whereas Strings are immutable.
+
+42.  Vector is a legacy class and similar to ArrayList but the difference is Vectors are thread safe.
+43.  Array is fixed sized and only contained one data size and ArrayLis is part of Java collections and it is dynamics and it can store objects as well.
+44.  HashMap is non synchronized. It is not-thread safe and can't be shared between many threads without proper synchronization code whereas Hashtable is synchronized. ... HashMap allows one null key and multiple null values whereas Hashtable doesn't allow any null key or value
+
+
+45. The set interface is present in the Java.util package and extends the Collection Interface.  It doesn’t store duplicate values
+
+46.  Abstract class is a restricted class that cannot be used to create objects.  Helps to hide the implementation.
+47.  Interface is the blueprint of the class and provides 100% abstraction.  Interfaces only contain method signatures but it doesn't have a method body.
+
+48.  Java is platform independent because it can run on any operating systems.
+
+49.  Access modifiers help in restricting scope of the class.  There are four kinds of access modifiers.  Private, Protected, Default and PUblic.  For example public and anyone can have access of the class (outside package and within package).
+
+50.  Exceptions are when there is a disruption in the flow of hte code.
+
+51 Throwable is the superclass of the exceptions and errors.  The throws keyword indicates what exception type may be thrown by a method.
+
+52.  Error is when one cannot handle it and it is irreversible and exception is when the user can handle the exception by catching it for by fixing the code.
+
+55.  The final keyword can be used with class method and variable. A final class cannot be instantiated, a final method cannot be overridden and a final variable cannot be reassigned.
+  Finally is the block of the code and follow by try catch.
+
+56. Java supports Mulitple inheritance thru interfaces.
+
+58. Wrapper classes provide a way to use primitive data types as objects
+59. Converting a primitive value into an object of the corresponding wrapper class is called autoboxing and viceversa is unboxing.
+
+60. For each loop traverse the code without using indices.
+61. Iterators help in loop through  the collections.
+
